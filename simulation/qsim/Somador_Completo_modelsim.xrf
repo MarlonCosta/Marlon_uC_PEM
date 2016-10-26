@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, /home/mrlnrnn/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/Somador_Completo.bdf
+source_file = 1, /home/mrlnrnn/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/tb_Somador_Completo.vwf
+source_file = 1, /home/mrlnrnn/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/Meio_Somador.bdf
+design_name = Somador_Completo
+instance = comp, \S~output , S~output, Somador_Completo, 1
+instance = comp, \C_OUT~output , C_OUT~output, Somador_Completo, 1
+instance = comp, \C_IN~input , C_IN~input, Somador_Completo, 1
+instance = comp, \B~input , B~input, Somador_Completo, 1
+instance = comp, \A~input , A~input, Somador_Completo, 1
+instance = comp, \inst7|inst2~0 , inst7|inst2~0, Somador_Completo, 1
+instance = comp, \inst~0 , inst~0, Somador_Completo, 1

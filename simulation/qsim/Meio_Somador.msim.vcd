@@ -1,0 +1,114 @@
+$comment
+	File created using the following command:
+		vcd file Meio_Somador.msim.vcd -direction
+$end
+$date
+	Mon Oct 24 16:16:25 2016
+$end
+$version
+	ModelSim Version 10.4d
+$end
+$timescale
+	1ps
+$end
+
+$scope module Meio_Somador_vlg_vec_tst $end
+$var reg 1 ! A $end
+$var reg 1 " B $end
+$var wire 1 # COUT $end
+$var wire 1 $ S0 $end
+
+$scope module i1 $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var tri1 1 ( devclrn $end
+$var tri1 1 ) devpor $end
+$var tri1 1 * devoe $end
+$var wire 1 + COUT~output_o $end
+$var wire 1 , S0~output_o $end
+$var wire 1 - A~input_o $end
+$var wire 1 . B~input_o $end
+$var wire 1 / inst~combout $end
+$var wire 1 0 inst2~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+0"
+x#
+x$
+0%
+1&
+x'
+1(
+1)
+1*
+x+
+x,
+1-
+0.
+x/
+x0
+$end
+#3657
+0/
+#4106
+10
+#7040
+0+
+0#
+#7507
+1,
+1$
+#200000
+0!
+#200801
+0-
+#205179
+00
+#208565
+0,
+0$
+#400000
+1"
+1!
+#400685
+1-
+1.
+#404065
+10
+#404732
+1/
+#404801
+00
+#408130
+1+
+1#
+#600000
+0"
+0!
+#600801
+0-
+0.
+#604458
+0/
+#604474
+10
+#605179
+00
+#607841
+0+
+0#
+#800000
+1"
+#800685
+1.
+#804065
+10
+#807466
+1,
+1$
+#1000000

@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/mrlnrnn/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/simulation/qsim
+vMeio_Somador
+Z1 !s110 1477336584
+!i10b 1
+!s100 AMUDCTBSzoLNnJM[IC>d@3
+I<zaZK[>2n8<Fe0TD1BC_20
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1477336583
+8Meio_Somador.vo
+FMeio_Somador.vo
+Z3 L0 32
+Z4 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z5 !s108 1477336584.000000
+!s107 Meio_Somador.vo|
+!s90 -work|work|Meio_Somador.vo|
+!i113 1
+Z6 o-work work
+n@meio_@somador
+vMeio_Somador_vlg_vec_tst
+R1
+!i10b 1
+!s100 L5OdQ1F7@XK@A1:hKhFk`1
+IH00OTcn`VXOjU6ADR<[W30
+R2
+R0
+w1477336580
+8tb_Meio_Somador.vwf.vt
+Ftb_Meio_Somador.vwf.vt
+Z7 L0 30
+R4
+r1
+!s85 0
+31
+R5
+!s107 tb_Meio_Somador.vwf.vt|
+!s90 -work|work|tb_Meio_Somador.vwf.vt|
+!i113 1
+R6
+n@meio_@somador_vlg_vec_tst
+vSomador_Completo
+Z8 !s110 1477338907
+!i10b 1
+!s100 >:`FYe7TJ9;ORE?0[@_[N0
+IF00CTCQS86ijQYalYI=Ta1
+R2
+R0
+w1477338906
+8Somador_Completo.vo
+FSomador_Completo.vo
+R3
+R4
+r1
+!s85 0
+31
+Z9 !s108 1477338907.000000
+!s107 Somador_Completo.vo|
+!s90 -work|work|Somador_Completo.vo|
+!i113 1
+R6
+n@somador_@completo
+vSomador_Completo_vlg_vec_tst
+R8
+!i10b 1
+!s100 X2Y^YDZO9H7N34W?`4Q<l3
+I]:Uo77>7e7Bin@V?FaoWj0
+R2
+R0
+w1477338904
+8tb_Somador_Completo.vwf.vt
+Ftb_Somador_Completo.vwf.vt
+R7
+R4
+r1
+!s85 0
+31
+R9
+!s107 tb_Somador_Completo.vwf.vt|
+!s90 -work|work|tb_Somador_Completo.vwf.vt|
+!i113 1
+R6
+n@somador_@completo_vlg_vec_tst

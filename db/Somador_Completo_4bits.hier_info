@@ -1,0 +1,120 @@
+|Somador_Completo_4bits
+S0 <= <GND>
+S1 <= Somador_Completo:inst2.S
+A0 => Somador_Completo:inst3.A
+B0 => Somador_Completo:inst3.B
+A1 => Somador_Completo:inst2.A
+B1 => Somador_Completo:inst2.B
+S2 <= Somador_Completo:inst1.S
+A2 => Somador_Completo:inst1.A
+B2 => Somador_Completo:inst1.B
+S3 <= Somador_Completo:inst.S
+A3 => Somador_Completo:inst.A
+B3 => Somador_Completo:inst.B
+COUT <= Somador_Completo:inst.C_OUT
+
+
+|Somador_Completo_4bits|Somador_Completo:inst2
+S <= Meio_Somador:inst1.S0
+C_IN => Meio_Somador:inst1.A
+A => Meio_Somador:inst6.A
+B => Meio_Somador:inst6.B
+C_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_Completo_4bits|Somador_Completo:inst2|Meio_Somador:inst1
+COUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_Completo_4bits|Somador_Completo:inst2|Meio_Somador:inst6
+COUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_Completo_4bits|Somador_Completo:inst3
+S <= Meio_Somador:inst1.S0
+C_IN => Meio_Somador:inst1.A
+A => Meio_Somador:inst6.A
+B => Meio_Somador:inst6.B
+C_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_Completo_4bits|Somador_Completo:inst3|Meio_Somador:inst1
+COUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_Completo_4bits|Somador_Completo:inst3|Meio_Somador:inst6
+COUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_Completo_4bits|Somador_Completo:inst1
+S <= Meio_Somador:inst1.S0
+C_IN => Meio_Somador:inst1.A
+A => Meio_Somador:inst6.A
+B => Meio_Somador:inst6.B
+C_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_Completo_4bits|Somador_Completo:inst1|Meio_Somador:inst1
+COUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_Completo_4bits|Somador_Completo:inst1|Meio_Somador:inst6
+COUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_Completo_4bits|Somador_Completo:inst
+S <= Meio_Somador:inst1.S0
+C_IN => Meio_Somador:inst1.A
+A => Meio_Somador:inst6.A
+B => Meio_Somador:inst6.B
+C_OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_Completo_4bits|Somador_Completo:inst|Meio_Somador:inst1
+COUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_Completo_4bits|Somador_Completo:inst|Meio_Somador:inst6
+COUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
