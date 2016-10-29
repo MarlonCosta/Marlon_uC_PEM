@@ -24,7 +24,7 @@ agreement for further details.
 	(input)
 	(rect 64 48 232 64)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
-	(text "A" (rect 5 0 14 12)(font "Arial" ))
+	(text "x" (rect 5 0 14 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -40,7 +40,7 @@ agreement for further details.
 	(input)
 	(rect 64 64 232 80)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
-	(text "B" (rect 5 0 14 12)(font "Liberation Sans" ))
+	(text "y" (rect 5 0 14 12)(font "Liberation Sans" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -56,7 +56,7 @@ agreement for further details.
 	(input)
 	(rect 64 8 232 24)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
-	(text "C_IN" (rect 5 0 42 12)(font "Liberation Sans" ))
+	(text "cin" (rect 5 0 33 12)(font "Liberation Sans" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -70,9 +70,9 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 664 8 840 24)
+	(rect 664 56 840 72)
 	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
-	(text "S" (rect 90 0 99 12)(font "Liberation Sans" ))
+	(text "cout" (rect 90 0 127 12)(font "Liberation Sans" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -86,9 +86,9 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 664 56 840 72)
+	(rect 664 8 840 24)
 	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
-	(text "C_OUT" (rect 90 0 137 12)(font "Liberation Sans" ))
+	(text "s" (rect 90 0 99 12)(font "Liberation Sans" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -101,45 +101,81 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 272 24 384 120)
+	(rect 272 24 368 120)
 	(text "Meio_Somador" (rect 5 0 146 16)(font "Liberation Sans" (font_size 8)))
-	(text "inst6" (rect 8 80 55 92)(font "Liberation Sans" ))
+	(text "inst" (rect 8 80 45 92)(font "Liberation Sans" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "A" (rect 0 0 11 16)(font "Liberation Sans" (font_size 8)))
-		(text "A" (rect 21 27 32 43)(font "Liberation Sans" (font_size 8)))
+		(text "x" (rect 0 0 11 16)(font "Liberation Sans" (font_size 8)))
+		(text "x" (rect 21 27 32 43)(font "Liberation Sans" (font_size 8)))
 		(line (pt 0 32)(pt 16 32))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "B" (rect 0 0 11 16)(font "Liberation Sans" (font_size 8)))
-		(text "B" (rect 21 43 32 59)(font "Liberation Sans" (font_size 8)))
+		(text "y" (rect 0 0 11 16)(font "Liberation Sans" (font_size 8)))
+		(text "y" (rect 21 43 32 59)(font "Liberation Sans" (font_size 8)))
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port
-		(pt 112 32)
+		(pt 96 32)
 		(output)
-		(text "S0" (rect 0 0 23 16)(font "Liberation Sans" (font_size 8)))
-		(text "S0" (rect 68 27 91 43)(font "Liberation Sans" (font_size 8)))
-		(line (pt 112 32)(pt 96 32))
+		(text "S" (rect 0 0 11 16)(font "Liberation Sans" (font_size 8)))
+		(text "S" (rect 64 27 75 43)(font "Liberation Sans" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
 	)
 	(port
-		(pt 112 48)
+		(pt 96 48)
 		(output)
-		(text "COUT" (rect 0 0 47 16)(font "Liberation Sans" (font_size 8)))
-		(text "COUT" (rect 44 43 91 59)(font "Liberation Sans" (font_size 8)))
-		(line (pt 112 48)(pt 96 48))
+		(text "C" (rect 0 0 11 16)(font "Liberation Sans" (font_size 8)))
+		(text "C" (rect 64 43 75 59)(font "Liberation Sans" (font_size 8)))
+		(line (pt 96 48)(pt 80 48))
 	)
 	(drawing
-		(rectangle (rect 16 16 96 80))
+		(rectangle (rect 16 16 80 80))
+	)
+)
+(symbol
+	(rect 416 -16 512 80)
+	(text "Meio_Somador" (rect 5 0 146 16)(font "Liberation Sans" (font_size 8)))
+	(text "inst1" (rect 8 80 55 92)(font "Liberation Sans" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "x" (rect 0 0 11 16)(font "Liberation Sans" (font_size 8)))
+		(text "x" (rect 21 27 32 43)(font "Liberation Sans" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "y" (rect 0 0 11 16)(font "Liberation Sans" (font_size 8)))
+		(text "y" (rect 21 43 32 59)(font "Liberation Sans" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "S" (rect 0 0 11 16)(font "Liberation Sans" (font_size 8)))
+		(text "S" (rect 64 27 75 43)(font "Liberation Sans" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(port
+		(pt 96 48)
+		(output)
+		(text "C" (rect 0 0 11 16)(font "Liberation Sans" (font_size 8)))
+		(text "C" (rect 64 43 75 59)(font "Liberation Sans" (font_size 8)))
+		(line (pt 96 48)(pt 80 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 80))
 	)
 )
 (symbol
 	(rect 576 40 640 88)
 	(text "OR2" (rect 1 0 25 11)(font "Arial" (font_size 6)))
-	(text "inst" (rect 3 37 40 49)(font "Arial" ))
+	(text "inst2" (rect 3 37 50 49)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -169,46 +205,6 @@ agreement for further details.
 		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36))
 	)
 )
-(symbol
-	(rect 424 -16 536 80)
-	(text "Meio_Somador" (rect 5 0 146 16)(font "Liberation Sans" (font_size 8)))
-	(text "inst1" (rect 8 80 55 92)(font "Liberation Sans" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "A" (rect 0 0 11 16)(font "Liberation Sans" (font_size 8)))
-		(text "A" (rect 21 27 32 43)(font "Liberation Sans" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "B" (rect 0 0 11 16)(font "Liberation Sans" (font_size 8)))
-		(text "B" (rect 21 43 32 59)(font "Liberation Sans" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 112 32)
-		(output)
-		(text "S0" (rect 0 0 23 16)(font "Liberation Sans" (font_size 8)))
-		(text "S0" (rect 68 27 91 43)(font "Liberation Sans" (font_size 8)))
-		(line (pt 112 32)(pt 96 32))
-	)
-	(port
-		(pt 112 48)
-		(output)
-		(text "COUT" (rect 0 0 47 16)(font "Liberation Sans" (font_size 8)))
-		(text "COUT" (rect 44 43 91 59)(font "Liberation Sans" (font_size 8)))
-		(line (pt 112 48)(pt 96 48))
-	)
-	(drawing
-		(rectangle (rect 16 16 96 80))
-	)
-)
-(connector
-	(pt 424 32)
-	(pt 400 32)
-)
 (connector
 	(pt 640 64)
 	(pt 664 64)
@@ -218,38 +214,42 @@ agreement for further details.
 	(pt 552 56)
 )
 (connector
-	(pt 552 56)
-	(pt 552 32)
-)
-(connector
-	(pt 552 32)
-	(pt 536 32)
-)
-(connector
-	(pt 536 16)
-	(pt 664 16)
-)
-(connector
-	(pt 424 16)
-	(pt 232 16)
-)
-(connector
-	(pt 400 32)
-	(pt 400 56)
-)
-(connector
-	(pt 400 56)
-	(pt 384 56)
-)
-(connector
-	(pt 576 72)
-	(pt 384 72)
-)
-(connector
 	(pt 232 56)
 	(pt 272 56)
 )
 (connector
 	(pt 232 72)
 	(pt 272 72)
+)
+(connector
+	(pt 232 16)
+	(pt 416 16)
+)
+(connector
+	(pt 400 32)
+	(pt 416 32)
+)
+(connector
+	(pt 400 56)
+	(pt 400 32)
+)
+(connector
+	(pt 552 56)
+	(pt 552 32)
+)
+(connector
+	(pt 552 32)
+	(pt 512 32)
+)
+(connector
+	(pt 512 16)
+	(pt 664 16)
+)
+(connector
+	(pt 368 56)
+	(pt 400 56)
+)
+(connector
+	(pt 368 72)
+	(pt 576 72)
 )

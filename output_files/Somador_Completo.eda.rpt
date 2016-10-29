@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Somador_Completo
-Mon Oct 24 16:55:06 2016
+Thu Oct 27 11:35:34 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Oct 24 16:55:06 2016 ;
+; EDA Netlist Writer Status ; Successful - Thu Oct 27 11:35:34 2016 ;
 ; Revision Name             ; Somador_Completo                      ;
 ; Top-level Entity Name     ; Somador_Completo                      ;
 ; Family                    ; Cyclone IV E                          ;
@@ -103,7 +103,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Altera and sold by Altera or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Mon Oct 24 16:55:05 2016
+    Info: Processing started: Thu Oct 27 11:35:34 2016
 Info: Command: quartus_eda --write_settings_files=off --functional=off --flatten_buses=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog --output_directory="/home/mrlnrnn/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/simulation/qsim/" Somador_Completo -c Somador_Completo
 Info (204019): Generated file Somador_Completo_7_1200mv_125c_slow.vo in folder "/home/mrlnrnn/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/simulation/qsim//" for EDA simulation tool
 Info (204019): Generated file Somador_Completo_7_1200mv_-40c_slow.vo in folder "/home/mrlnrnn/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/simulation/qsim//" for EDA simulation tool
@@ -114,9 +114,9 @@ Info (204019): Generated file Somador_Completo_7_1200mv_-40c_v_slow.sdo in folde
 Info (204019): Generated file Somador_Completo_min_1200mv_-40c_v_fast.sdo in folder "/home/mrlnrnn/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/simulation/qsim//" for EDA simulation tool
 Info (204019): Generated file Somador_Completo_v.sdo in folder "/home/mrlnrnn/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 1304 megabytes
-    Info: Processing ended: Mon Oct 24 16:55:06 2016
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 1306 megabytes
+    Info: Processing ended: Thu Oct 27 11:35:34 2016
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 

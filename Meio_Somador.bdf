@@ -24,7 +24,7 @@ agreement for further details.
 	(input)
 	(rect 8 64 176 80)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
-	(text "A" (rect 5 0 14 12)(font "Arial" ))
+	(text "x" (rect 5 0 15 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -40,7 +40,7 @@ agreement for further details.
 	(input)
 	(rect 8 80 176 96)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
-	(text "B" (rect 5 0 14 12)(font "Liberation Sans" ))
+	(text "y" (rect 5 0 15 12)(font "Liberation Sans" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -54,9 +54,9 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 312 144 488 160)
+	(rect 312 72 488 88)
 	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
-	(text "COUT" (rect 90 0 127 12)(font "Liberation Sans" ))
+	(text "S" (rect 90 0 99 12)(font "Liberation Sans" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -70,9 +70,9 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 312 72 488 88)
+	(rect 312 144 488 160)
 	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
-	(text "S" (rect 90 0 99 12)(font "Liberation Sans" ))
+	(text "C" (rect 90 0 99 12)(font "Liberation Sans" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -119,7 +119,7 @@ agreement for further details.
 (symbol
 	(rect 224 56 288 104)
 	(text "XOR" (rect 1 0 25 11)(font "Arial" (font_size 6)))
-	(text "inst2" (rect 3 37 50 49)(font "Liberation Sans" ))
+	(text "inst1" (rect 3 37 50 49)(font "Liberation Sans" ))
 	(port
 		(pt 0 16)
 		(input)

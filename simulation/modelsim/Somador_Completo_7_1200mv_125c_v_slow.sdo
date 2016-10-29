@@ -30,7 +30,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "Somador_Completo")
-  (DATE "10/24/2016 16:49:05")
+  (DATE "10/27/2016 11:33:46")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition")
@@ -39,7 +39,7 @@
 
   (CELL
     (CELLTYPE "cycloneive_io_obuf")
-    (INSTANCE S\~output)
+    (INSTANCE cout\~output)
     (DELAY
       (ABSOLUTE
         (PORT i (609:609:609) (585:585:585))
@@ -49,7 +49,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_io_obuf")
-    (INSTANCE C_OUT\~output)
+    (INSTANCE s\~output)
     (DELAY
       (ABSOLUTE
         (PORT i (877:877:877) (843:843:843))
@@ -59,7 +59,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_io_ibuf")
-    (INSTANCE C_IN\~input)
+    (INSTANCE y\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (685:685:685) (801:801:801))
@@ -68,7 +68,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_io_ibuf")
-    (INSTANCE B\~input)
+    (INSTANCE x\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (685:685:685) (801:801:801))
@@ -77,7 +77,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_io_ibuf")
-    (INSTANCE A\~input)
+    (INSTANCE cin\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (685:685:685) (801:801:801))
@@ -86,13 +86,13 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE inst7\|inst2\~0)
+    (INSTANCE inst2\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3464:3464:3464) (3730:3730:3730))
         (PORT datac (3103:3103:3103) (3357:3357:3357))
         (PORT datad (3791:3791:3791) (4058:4058:4058))
-        (IOPATH datab combout (442:442:442) (452:452:452))
+        (IOPATH datab combout (418:418:418) (412:412:412))
         (IOPATH datac combout (297:297:297) (292:292:292))
         (IOPATH datad combout (160:160:160) (145:145:145))
       )
@@ -100,13 +100,13 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE inst\~0)
+    (INSTANCE inst1\|inst1\~0)
     (DELAY
       (ABSOLUTE
         (PORT datab (3463:3463:3463) (3729:3729:3729))
         (PORT datac (3102:3102:3102) (3356:3356:3356))
         (PORT datad (3791:3791:3791) (4058:4058:4058))
-        (IOPATH datab combout (418:418:418) (412:412:412))
+        (IOPATH datab combout (442:442:442) (452:452:452))
         (IOPATH datac combout (297:297:297) (292:292:292))
         (IOPATH datad combout (160:160:160) (145:145:145))
       )

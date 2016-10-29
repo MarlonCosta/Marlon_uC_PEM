@@ -3,7 +3,7 @@ $comment
 		vcd file Somador_Completo.msim.vcd -direction
 $end
 $date
-	Mon Oct 24 16:55:07 2016
+	Thu Oct 27 11:35:40 2016
 $end
 $version
 	ModelSim Version 10.4d
@@ -13,11 +13,11 @@ $timescale
 $end
 
 $scope module Somador_Completo_vlg_vec_tst $end
-$var reg 1 ! A $end
-$var reg 1 " B $end
-$var reg 1 # C_IN $end
-$var wire 1 $ C_OUT $end
-$var wire 1 % S $end
+$var reg 1 ! cin $end
+$var reg 1 " x $end
+$var reg 1 # y $end
+$var wire 1 $ cout $end
+$var wire 1 % s $end
 
 $scope module i1 $end
 $var wire 1 & gnd $end
@@ -26,20 +26,20 @@ $var wire 1 ( unknown $end
 $var tri1 1 ) devclrn $end
 $var tri1 1 * devpor $end
 $var tri1 1 + devoe $end
-$var wire 1 , S~output_o $end
-$var wire 1 - C_OUT~output_o $end
-$var wire 1 . C_IN~input_o $end
-$var wire 1 / B~input_o $end
-$var wire 1 0 A~input_o $end
-$var wire 1 1 inst7|inst2~0_combout $end
-$var wire 1 2 inst~0_combout $end
+$var wire 1 , cout~output_o $end
+$var wire 1 - s~output_o $end
+$var wire 1 . y~input_o $end
+$var wire 1 / x~input_o $end
+$var wire 1 0 cin~input_o $end
+$var wire 1 1 inst2~0_combout $end
+$var wire 1 2 inst1|inst1~0_combout $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-1!
-0"
+0!
+1"
 0#
 x$
 x%
@@ -52,93 +52,66 @@ x(
 x,
 x-
 0.
-0/
-10
+1/
+00
 x1
 x2
 $end
-#3951
-11
-#4141
-02
-#7580
-1,
-1%
-#7881
-0-
-0$
-#200000
-0!
-1"
-#200685
-1/
-#200801
-00
-#204080
+#4203
 01
-#204084
+#4218
 12
-#205004
-02
-#205019
-11
-#400000
-1!
-#400685
-10
-#404621
-01
-#404636
-12
-#408211
+#7793
 0,
-0%
-#408442
+0$
+#8024
 1-
-1$
-#600000
-1#
-0"
-#600685
-1.
-#600801
-0/
-#800000
-0!
-1"
-#800685
-1/
-#800801
-00
-#804085
-11
-#805004
-01
-#1000000
-1!
-#1000685
-10
-#1004636
-11
-#1008265
-1,
 1%
-#1200000
+#200000
+0"
+#200801
+0/
+#204449
+02
+#208189
+0-
+0%
+#400000
+1#
+#400685
+1.
+#404590
+12
+#408396
+1-
+1%
+#600000
+1"
+#600685
+1/
+#604079
+02
+#604085
+11
+#607714
+1,
+1$
+#607819
+0-
+0%
+#800000
 0#
 0"
-0!
-#1200801
-00
+#800801
 0/
 0.
-#1204450
+#804450
 01
-#1204942
+#804454
+12
+#804982
 02
-#1208040
+#808040
 0,
-0%
-#1208682
-0-
 0$
-#1400000
+#1000000

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Somador_Completo_4bits
-Wed Oct 26 14:46:42 2016
+Fri Oct 28 21:56:09 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -10,7 +10,18 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. General Register Statistics
+ 11. Source assignments for ROM_Operandos:inst5|altsyncram:altsyncram_component|altsyncram_ep91:auto_generated
+ 12. Parameter Settings for User Entity Instance: ROM_Operandos:inst5|altsyncram:altsyncram_component
+ 13. altsyncram Parameter Settings by Entity Instance
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -37,20 +48,20 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Wed Oct 26 14:46:42 2016           ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 28 21:56:09 2016       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; Somador_Completo_4bits                      ;
 ; Top-level Entity Name              ; Somador_Completo_4bits                      ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 8                                           ;
+;     Total combinational functions  ; 8                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 11                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 256                                         ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -152,38 +163,287 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
++----------------------------------+-----------------+---------------------------------------+----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                             ; File Name with Absolute Path                                                           ; Library ;
++----------------------------------+-----------------+---------------------------------------+----------------------------------------------------------------------------------------+---------+
+; Somador_Completo.bdf             ; yes             ; User Block Diagram/Schematic File     ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/Somador_Completo.bdf       ;         ;
+; Meio_Somador.bdf                 ; yes             ; User Block Diagram/Schematic File     ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/Meio_Somador.bdf           ;         ;
+; Somador_Completo_4bits.bdf       ; yes             ; User Block Diagram/Schematic File     ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/Somador_Completo_4bits.bdf ;         ;
+; Dados.hex                        ; yes             ; User Hexadecimal (Intel-Format) File  ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/Dados.hex                  ;         ;
+; ROM_Operandos.v                  ; yes             ; User Wizard-Generated File            ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/ROM_Operandos.v            ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                          ; c:/altera_lite/16.0/quartus/libraries/megafunctions/altsyncram.tdf                     ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                          ; c:/altera_lite/16.0/quartus/libraries/megafunctions/stratix_ram_block.inc              ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                          ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_mux.inc                        ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                          ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_decode.inc                     ;         ;
+; aglobal160.inc                   ; yes             ; Megafunction                          ; c:/altera_lite/16.0/quartus/libraries/megafunctions/aglobal160.inc                     ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                          ; c:/altera_lite/16.0/quartus/libraries/megafunctions/a_rdenreg.inc                      ;         ;
+; altrom.inc                       ; yes             ; Megafunction                          ; c:/altera_lite/16.0/quartus/libraries/megafunctions/altrom.inc                         ;         ;
+; altram.inc                       ; yes             ; Megafunction                          ; c:/altera_lite/16.0/quartus/libraries/megafunctions/altram.inc                         ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                          ; c:/altera_lite/16.0/quartus/libraries/megafunctions/altdpram.inc                       ;         ;
+; db/altsyncram_ep91.tdf           ; yes             ; Auto-Generated Megafunction           ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/db/altsyncram_ep91.tdf     ;         ;
++----------------------------------+-----------------+---------------------------------------+----------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 8           ;
+;                                             ;             ;
+; Total combinational functions               ; 8           ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 4           ;
+;     -- 3 input functions                    ; 2           ;
+;     -- <=2 input functions                  ; 2           ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 8           ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 0           ;
+;     -- Dedicated logic registers            ; 0           ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 11          ;
+; Total memory bits                           ; 256         ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; Clock~input ;
+; Maximum fan-out                             ; 8           ;
+; Total fan-out                               ; 90          ;
+; Average fan-out                             ; 2.37        ;
++---------------------------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                        ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------+------------------------+--------------+
+; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                        ; Entity Name            ; Library Name ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------+------------------------+--------------+
+; |Somador_Completo_4bits                   ; 8 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 11   ; 0            ; |Somador_Completo_4bits                                                                                    ; Somador_Completo_4bits ; work         ;
+;    |ROM_Operandos:inst5|                  ; 0 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |Somador_Completo_4bits|ROM_Operandos:inst5                                                                ; ROM_Operandos          ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |Somador_Completo_4bits|ROM_Operandos:inst5|altsyncram:altsyncram_component                                ; altsyncram             ; work         ;
+;          |altsyncram_ep91:auto_generated| ; 0 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |Somador_Completo_4bits|ROM_Operandos:inst5|altsyncram:altsyncram_component|altsyncram_ep91:auto_generated ; altsyncram_ep91        ; work         ;
+;    |Somador_Completo:inst1|               ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Somador_Completo_4bits|Somador_Completo:inst1                                                             ; Somador_Completo       ; work         ;
+;       |Meio_Somador:inst|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Somador_Completo_4bits|Somador_Completo:inst1|Meio_Somador:inst                                           ; Meio_Somador           ; work         ;
+;    |Somador_Completo:inst2|               ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Somador_Completo_4bits|Somador_Completo:inst2                                                             ; Somador_Completo       ; work         ;
+;       |Meio_Somador:inst1|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Somador_Completo_4bits|Somador_Completo:inst2|Meio_Somador:inst1                                          ; Meio_Somador           ; work         ;
+;    |Somador_Completo:inst3|               ; 3 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Somador_Completo_4bits|Somador_Completo:inst3                                                             ; Somador_Completo       ; work         ;
+;       |Meio_Somador:inst1|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Somador_Completo_4bits|Somador_Completo:inst3|Meio_Somador:inst1                                          ; Meio_Somador           ; work         ;
+;    |Somador_Completo:inst4|               ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Somador_Completo_4bits|Somador_Completo:inst4                                                             ; Somador_Completo       ; work         ;
+;       |Meio_Somador:inst1|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Somador_Completo_4bits|Somador_Completo:inst4|Meio_Somador:inst1                                          ; Meio_Somador           ; work         ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------+------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                           ;
++-----------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------+
+; Name                                                                                          ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF       ;
++-----------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------+
+; ROM_Operandos:inst5|altsyncram:altsyncram_component|altsyncram_ep91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 32           ; 8            ; --           ; --           ; 256  ; Dados.hex ;
++-----------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                         ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------+-----------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                             ; IP Include File ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------+-----------------+
+; Altera ; ROM: 1-PORT  ; 16.0    ; N/A          ; N/A          ; |Somador_Completo_4bits|ROM_Operandos:inst5 ; ROM_Operandos.v ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------+-----------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Source assignments for ROM_Operandos:inst5|altsyncram:altsyncram_component|altsyncram_ep91:auto_generated ;
++---------------------------------+--------------------+------+---------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                          ;
++---------------------------------+--------------------+------+---------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                           ;
++---------------------------------+--------------------+------+---------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ROM_Operandos:inst5|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+--------------------------------------+
+; Parameter Name                     ; Value                ; Type                                 ;
++------------------------------------+----------------------+--------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                              ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                           ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                         ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                         ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                       ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                              ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                              ;
+; WIDTH_A                            ; 8                    ; Signed Integer                       ;
+; WIDTHAD_A                          ; 5                    ; Signed Integer                       ;
+; NUMWORDS_A                         ; 32                   ; Signed Integer                       ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                              ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                              ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                              ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                              ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                              ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                              ;
+; WIDTH_B                            ; 1                    ; Untyped                              ;
+; WIDTHAD_B                          ; 1                    ; Untyped                              ;
+; NUMWORDS_B                         ; 1                    ; Untyped                              ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                              ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                              ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                              ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                              ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                              ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                              ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                              ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                              ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                              ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                              ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                              ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                              ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                       ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                              ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                              ;
+; BYTE_SIZE                          ; 8                    ; Untyped                              ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                              ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                              ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                              ;
+; INIT_FILE                          ; Dados.hex            ; Untyped                              ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                              ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                              ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                              ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                              ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                              ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                              ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                              ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                              ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                              ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                              ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                              ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                              ;
+; CBXI_PARAMETER                     ; altsyncram_ep91      ; Untyped                              ;
++------------------------------------+----------------------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                ;
++-------------------------------------------+-----------------------------------------------------+
+; Name                                      ; Value                                               ;
++-------------------------------------------+-----------------------------------------------------+
+; Number of entity instances                ; 1                                                   ;
+; Entity Instance                           ; ROM_Operandos:inst5|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                                 ;
+;     -- WIDTH_A                            ; 8                                                   ;
+;     -- NUMWORDS_A                         ; 32                                                  ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                        ;
+;     -- WIDTH_B                            ; 1                                                   ;
+;     -- NUMWORDS_B                         ; 1                                                   ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                              ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                        ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                           ;
++-------------------------------------------+-----------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 11                          ;
+; cycloneiii_lcell_comb ; 8                           ;
+;     normal            ; 8                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 4                           ;
+; cycloneiii_ram_block  ; 8                           ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.64                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Wed Oct 26 14:46:23 2016
+    Info: Processing started: Fri Oct 28 21:55:41 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Somador_Completo_4bits -c Somador_Completo_4bits
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 1 design units, including 1 entities, in source file Somador_Completo_4bits.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file somador_completo.bdf
+    Info (12023): Found entity 1: Somador_Completo
+Info (12021): Found 1 design units, including 1 entities, in source file meio_somador.bdf
+    Info (12023): Found entity 1: Meio_Somador
+Info (12021): Found 1 design units, including 1 entities, in source file somador_completo_4bits.bdf
     Info (12023): Found entity 1: Somador_Completo_4bits
+Info (12021): Found 1 design units, including 1 entities, in source file rom_operandos.v
+    Info (12023): Found entity 1: ROM_Operandos File: C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/ROM_Operandos.v Line: 40
 Info (12127): Elaborating entity "Somador_Completo_4bits" for the top level hierarchy
 Warning (275011): Block or symbol "Somador_Completo" of instance "inst3" overlaps another block or symbol
-Warning (275043): Pin "S0" is missing source
-Warning (12125): Using design file Somador_Completo.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Somador_Completo
-Info (12128): Elaborating entity "Somador_Completo" for hierarchy "Somador_Completo:inst2"
-Warning (12125): Using design file Meio_Somador.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Meio_Somador
-Info (12128): Elaborating entity "Meio_Somador" for hierarchy "Somador_Completo:inst2|Meio_Somador:inst1"
-Error (12002): Port "S0" does not exist in macrofunction "inst6"
-Error (12002): Port "S0" does not exist in macrofunction "inst1"
-Error (12002): Port "S0" does not exist in macrofunction "inst6"
-Error (12002): Port "S0" does not exist in macrofunction "inst1"
-Error (12002): Port "S0" does not exist in macrofunction "inst6"
-Error (12002): Port "S0" does not exist in macrofunction "inst1"
-Error (12002): Port "S0" does not exist in macrofunction "inst6"
-Error (12002): Port "S0" does not exist in macrofunction "inst1"
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 8 errors, 5 warnings
-    Error: Peak virtual memory: 1161 megabytes
-    Error: Processing ended: Wed Oct 26 14:46:42 2016
-    Error: Elapsed time: 00:00:19
-    Error: Total CPU time (on all processors): 00:00:42
+Info (12128): Elaborating entity "Somador_Completo" for hierarchy "Somador_Completo:inst4"
+Info (12128): Elaborating entity "Meio_Somador" for hierarchy "Somador_Completo:inst4|Meio_Somador:inst"
+Info (12128): Elaborating entity "ROM_Operandos" for hierarchy "ROM_Operandos:inst5"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ROM_Operandos:inst5|altsyncram:altsyncram_component" File: C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/ROM_Operandos.v Line: 82
+Info (12130): Elaborated megafunction instantiation "ROM_Operandos:inst5|altsyncram:altsyncram_component" File: C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/ROM_Operandos.v Line: 82
+Info (12133): Instantiated megafunction "ROM_Operandos:inst5|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/ROM_Operandos.v Line: 82
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "Dados.hex"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "32"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "widthad_a" = "5"
+    Info (12134): Parameter "width_a" = "8"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ep91.tdf
+    Info (12023): Found entity 1: altsyncram_ep91 File: C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/db/altsyncram_ep91.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_ep91" for hierarchy "ROM_Operandos:inst5|altsyncram:altsyncram_component|altsyncram_ep91:auto_generated" File: c:/altera_lite/16.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 27 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 5 output pins
+    Info (21061): Implemented 8 logic cells
+    Info (21064): Implemented 8 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 844 megabytes
+    Info: Processing ended: Fri Oct 28 21:56:09 2016
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:50
 
 

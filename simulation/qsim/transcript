@@ -1,36 +1,44 @@
-# do Somador_Completo.do
+# do Somador_Completo_4bits.do
 # ** Warning: (vlib-34) Library already exists at "work".
+# 
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 16:55:07 on Oct 24,2016
-# vlog -work work Somador_Completo.vo 
-# -- Compiling module Somador_Completo
+# Start time: 22:00:25 on Oct 28,2016
+# vlog -work work Somador_Completo_4bits.vo 
+# -- Compiling module Somador_Completo_4bits
 # 
 # Top level modules:
-# 	Somador_Completo
-# End time: 16:55:07 on Oct 24,2016, Elapsed time: 0:00:00
+# 	Somador_Completo_4bits
+# End time: 22:00:25 on Oct 28,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 16:55:07 on Oct 24,2016
-# vlog -work work tb_Somador_Completo.vwf.vt 
-# -- Compiling module Somador_Completo_vlg_vec_tst
+# Start time: 22:00:25 on Oct 28,2016
+# vlog -work work tb_Somador.vwf.vt 
+# -- Compiling module Somador_Completo_4bits_vlg_vec_tst
 # 
 # Top level modules:
-# 	Somador_Completo_vlg_vec_tst
-# End time: 16:55:07 on Oct 24,2016, Elapsed time: 0:00:00
+# 	Somador_Completo_4bits_vlg_vec_tst
+# End time: 22:00:25 on Oct 28,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Somador_Completo_vlg_vec_tst -voptargs=""+acc"" 
-# Start time: 16:55:07 on Oct 24,2016
-# Loading work.Somador_Completo_vlg_vec_tst
-# Loading work.Somador_Completo
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Somador_Completo_4bits_vlg_vec_tst -voptargs=""+acc"" 
+# Start time: 22:00:25 on Oct 28,2016
+# Loading work.Somador_Completo_4bits_vlg_vec_tst
+# Loading work.Somador_Completo_4bits
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_ram_block
+# Loading cycloneive_ver.cycloneive_ram_register
+# Loading cycloneive_ver.cycloneive_ram_pulse_generator
 # Loading cycloneive_ver.cycloneive_lcell_comb
 # SDF 10.4d Compiler 2015.12 Dec 30 2015
-# Loading instances from Somador_Completo_v.sdo
-# Loading timing data from Somador_Completo_v.sdo
+# 
+# Loading instances from Somador_Completo_4bits_v.sdo
+# Loading timing data from Somador_Completo_4bits_v.sdo
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /Somador_Completo_vlg_vec_tst File: tb_Somador_Completo.vwf.vt
-# ** Note: $finish    : tb_Somador_Completo.vwf.vt(51)
-#    Time: 1400 ns  Iteration: 0  Instance: /Somador_Completo_vlg_vec_tst
-# End time: 16:55:07 on Oct 24,2016, Elapsed time: 0:00:00
+#    Time: 0 ps  Iteration: 0  Instance: /Somador_Completo_4bits_vlg_vec_tst File: tb_Somador.vwf.vt
+# ** Note: $finish    : tb_Somador.vwf.vt(49)
+#    Time: 200 ns  Iteration: 0  Instance: /Somador_Completo_4bits_vlg_vec_tst
+# End time: 22:00:26 on Oct 28,2016, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

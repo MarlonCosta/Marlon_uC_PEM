@@ -51,13 +51,13 @@ R5
 R6
 n@meio_@somador_vlg_vec_tst
 vSomador_Completo
-Z8 !s110 1477338907
+Z8 !s110 1477578938
 !i10b 1
-!s100 >:`FYe7TJ9;ORE?0[@_[N0
-IF00CTCQS86ijQYalYI=Ta1
+!s100 oYI1Kzl@<El8_cMa[mcL32
+IC38<3@gXXk8Ln>WD3n2;n0
 R2
 R0
-w1477338906
+w1477578934
 8Somador_Completo.vo
 FSomador_Completo.vo
 R3
@@ -65,30 +65,72 @@ R4
 r1
 !s85 0
 31
-Z9 !s108 1477338907.000000
+Z9 !s108 1477578938.000000
 !s107 Somador_Completo.vo|
 !s90 -work|work|Somador_Completo.vo|
 !i113 1
 R6
 n@somador_@completo
+vSomador_Completo_4bits
+Z10 !s110 1477699225
+!i10b 1
+!s100 fVEkS3bo1MbZjAbM9PAZn3
+IeXPazFQzn5N4SbZF57dKA0
+R2
+Z11 dC:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/simulation/qsim
+w1477699221
+8Somador_Completo_4bits.vo
+FSomador_Completo_4bits.vo
+R3
+R4
+r1
+!s85 0
+31
+Z12 !s108 1477699225.000000
+!s107 Somador_Completo_4bits.vo|
+!s90 -work|work|Somador_Completo_4bits.vo|
+!i113 1
+R6
+n@somador_@completo_4bits
+vSomador_Completo_4bits_vlg_vec_tst
+R10
+!i10b 1
+!s100 JFl[BLLYCa?S[=VNgR@GN1
+I<kjWglL>zezR^U2O[LT8=1
+R2
+R11
+w1477699218
+8tb_Somador.vwf.vt
+Ftb_Somador.vwf.vt
+R7
+R4
+r1
+!s85 0
+31
+R12
+!s107 tb_Somador.vwf.vt|
+!s90 -work|work|tb_Somador.vwf.vt|
+!i113 1
+R6
+n@somador_@completo_4bits_vlg_vec_tst
 vSomador_Completo_vlg_vec_tst
 R8
 !i10b 1
-!s100 X2Y^YDZO9H7N34W?`4Q<l3
-I]:Uo77>7e7Bin@V?FaoWj0
+!s100 ]6@G<K4fdC>YCzQKOEV__0
+I6f<lKL1SnhLgMUa?Oa6Kz2
 R2
 R0
-w1477338904
-8tb_Somador_Completo.vwf.vt
-Ftb_Somador_Completo.vwf.vt
+w1477578933
+8teste.vwf.vt
+Fteste.vwf.vt
 R7
 R4
 r1
 !s85 0
 31
 R9
-!s107 tb_Somador_Completo.vwf.vt|
-!s90 -work|work|tb_Somador_Completo.vwf.vt|
+!s107 teste.vwf.vt|
+!s90 -work|work|teste.vwf.vt|
 !i113 1
 R6
 n@somador_@completo_vlg_vec_tst
