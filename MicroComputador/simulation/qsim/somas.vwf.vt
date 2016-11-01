@@ -1,0 +1,249 @@
+// Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "10/30/2016 14:41:31"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          AddSub
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module AddSub_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg ADD/SUB;
+reg [3:0] x;
+reg [3:0] y;
+// wires                                               
+wire COUT;
+wire [3:0] S;
+
+// assign statements (if any)                          
+AddSub i1 (
+// port map - connection between master ports and signals/registers   
+	.\ADD/SUB (ADD/SUB),
+	.COUT(COUT),
+	.S(S),
+	.x(x),
+	.y(y)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+// y[ 3 ]
+initial
+begin
+	y[3] = 1'b1;
+	y[3] = #2997 1'b0;
+	y[3] = #114000 1'b1;
+	y[3] = #86000 1'b0;
+	y[3] = #114000 1'b1;
+	y[3] = #105379 1'b0;
+	y[3] = #81334 1'b1;
+	y[3] = #51999 1'b0;
+	y[3] = #81334 1'b1;
+	y[3] = #51999 1'b0;
+	y[3] = #81334 1'b1;
+	y[3] = #44817 1'b0;
+	y[3] = #34667 1'b1;
+	y[3] = #31999 1'b0;
+	y[3] = #34667 1'b1;
+	y[3] = #31999 1'b0;
+	y[3] = #34667 1'b1;
+end 
+// y[ 2 ]
+initial
+begin
+	y[2] = 1'b1;
+	# 29126;
+	repeat(2)
+	begin
+		y[2] = 1'b0;
+		y[2] = #72000 1'b1;
+		# 61333;
+	end
+	y[2] = 1'b0;
+	y[2] = #72000 1'b1;
+	y[2] = #50015 1'b0;
+	y[2] = #42667 1'b1;
+	y[2] = #23999 1'b0;
+	y[2] = #42667 1'b1;
+	y[2] = #23999 1'b0;
+	y[2] = #42667 1'b1;
+	y[2] = #32970 1'b0;
+	y[2] = #130000 1'b1;
+	y[2] = #45639 1'b0;
+	y[2] = #40667 1'b1;
+	y[2] = #25999 1'b0;
+	y[2] = #40667 1'b1;
+	y[2] = #25999 1'b0;
+	y[2] = #40667 1'b1;
+end 
+// y[ 1 ]
+initial
+begin
+	y[1] = 1'b1;
+	y[1] = #27695 1'b0;
+	y[1] = #276000 1'b1;
+	y[1] = #99029 1'b0;
+	y[1] = #130000 1'b1;
+	y[1] = #70000 1'b0;
+	y[1] = #130000 1'b1;
+	y[1] = #67276 1'b0;
+	y[1] = #10688 1'b1;
+	# 21999;
+	repeat(2)
+	begin
+		y[1] = 1'b0;
+		y[1] = #44667 1'b1;
+		# 21999;
+	end
+	y[1] = 1'b0;
+end 
+// y[ 0 ]
+initial
+begin
+	y[0] = 1'b1;
+	# 16876;
+	repeat(2)
+	begin
+		y[0] = 1'b0;
+		y[0] = #65334 1'b1;
+		# 67999;
+	end
+	y[0] = 1'b0;
+	y[0] = #65334 1'b1;
+	y[0] = #51124 1'b0;
+	y[0] = #4409 1'b1;
+	# 24666;
+	repeat(2)
+	begin
+		y[0] = 1'b0;
+		y[0] = #42000 1'b1;
+		# 24666;
+	end
+	y[0] = 1'b0;
+	y[0] = #37593 1'b1;
+	# 15772;
+	repeat(2)
+	begin
+		y[0] = 1'b0;
+		y[0] = #84000 1'b1;
+		# 49333;
+	end
+	y[0] = 1'b0;
+	y[0] = #84000 1'b1;
+end 
+// x[ 3 ]
+initial
+begin
+	x[3] = 1'b1;
+	# 258;
+	repeat(2)
+	begin
+		x[3] = 1'b0;
+		x[3] = #84000 1'b1;
+		# 49333;
+	end
+	x[3] = 1'b0;
+	x[3] = #84000 1'b1;
+	x[3] = #66175 1'b0;
+	x[3] = #82000 1'b1;
+	x[3] = #119098 1'b0;
+	x[3] = #100000 1'b1;
+	x[3] = #100000 1'b0;
+	x[3] = #100000 1'b1;
+end 
+// x[ 2 ]
+initial
+begin
+	x[2] = 1'b1;
+	# 7364;
+	repeat(2)
+	begin
+		x[2] = 1'b0;
+		x[2] = #66667 1'b1;
+		# 66666;
+	end
+	x[2] = 1'b0;
+	x[2] = #66667 1'b1;
+	x[2] = #72559 1'b0;
+	x[2] = #92000 1'b1;
+	x[2] = #41333 1'b0;
+	x[2] = #92000 1'b1;
+	x[2] = #41333 1'b0;
+	x[2] = #92000 1'b1;
+	x[2] = #54082 1'b0;
+	x[2] = #112000 1'b1;
+end 
+// x[ 1 ]
+initial
+begin
+	x[1] = 1'b1;
+	# 25041;
+	repeat(2)
+	begin
+		x[1] = 1'b0;
+		x[1] = #88000 1'b1;
+		# 45333;
+	end
+	x[1] = 1'b0;
+	x[1] = #88000 1'b1;
+	x[1] = #41625 1'b0;
+	x[1] = #63000 1'b1;
+	x[1] = #37000 1'b0;
+	x[1] = #63000 1'b1;
+	x[1] = #36482 1'b0;
+	x[1] = #136000 1'b1;
+	x[1] = #72053 1'b0;
+	x[1] = #61000 1'b1;
+	x[1] = #39000 1'b0;
+	x[1] = #61000 1'b1;
+end 
+// x[ 0 ]
+initial
+begin
+	x[0] = 1'b1;
+	x[0] = #2622 1'b0;
+	x[0] = #240000 1'b1;
+	x[0] = #159364 1'b0;
+	x[0] = #94000 1'b1;
+	x[0] = #124241 1'b0;
+	x[0] = #45333 1'b1;
+	x[0] = #21333 1'b0;
+	x[0] = #45333 1'b1;
+	x[0] = #21333 1'b0;
+	x[0] = #45333 1'b1;
+	x[0] = #8234 1'b0;
+	x[0] = #63000 1'b1;
+	x[0] = #37000 1'b0;
+	x[0] = #63000 1'b1;
+end 
+
+// ADD/SUB
+initial
+begin
+	ADD/SUB = 1'b0;
+end 
+endmodule
+

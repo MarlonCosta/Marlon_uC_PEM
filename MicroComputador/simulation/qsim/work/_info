@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/simulation/qsim
+vAddSub
+!s110 1477849308
+!i10b 1
+!s100 I7:[Xf5lHR4Nz0if=UaX:0
+IRdgBLfo9EQ35Pz1e^QA^;3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1477849293
+Z2 8Micro_Computador.vo
+Z3 FMicro_Computador.vo
+Z4 L0 32
+Z5 OV;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1477849307.000000
+Z6 !s107 Micro_Computador.vo|
+Z7 !s90 -work|work|Micro_Computador.vo|
+!i113 1
+Z8 o-work work
+n@add@sub
+vFFJK
+!s110 1477873866
+!i10b 1
+!s100 oWO<dULhR>bLj7laD;<jd1
+Ie4o[KV5[hHH<MT6DQ;zg70
+R1
+R0
+w1477873865
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+!s108 1477873866.000000
+R6
+R7
+!i113 1
+R8
+n@f@f@j@k
+vFFJK_vlg_vec_tst
+!s110 1477873867
+!i10b 1
+!s100 ^:gH3n_Z7iGmE2g^69Qmh1
+IAZzf9IP1U6e:D^4MdH2;m0
+R1
+R0
+w1477873864
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R5
+r1
+!s85 0
+31
+!s108 1477873867.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R8
+n@f@f@j@k_vlg_vec_tst

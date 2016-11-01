@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/Somador_Completo.bdf
+source_file = 1, C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/Meio_Somador.bdf
+source_file = 1, C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/Somador_Completo_4bits.bdf
+source_file = 1, C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/Program_Counter.bdf
+source_file = 1, C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/Registrador.bdf
+source_file = 1, C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/Micro_Computador.bdf
+source_file = 1, C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/AddSub.bdf
+source_file = 1, C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/somas.vwf
+source_file = 1, C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/FFJK.bdf
+source_file = 1, C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/db/Micro_Computador.cbx.xml
+design_name = FFJK
+instance = comp, \Q~output , Q~output, FFJK, 1
+instance = comp, \Qq~output , Qq~output, FFJK, 1
+instance = comp, \K~input , K~input, FFJK, 1
+instance = comp, \CLK~input , CLK~input, FFJK, 1
+instance = comp, \J~input , J~input, FFJK, 1

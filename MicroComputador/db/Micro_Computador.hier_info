@@ -1,0 +1,19 @@
+|Micro_Computador
+
+
+|Micro_Computador|Program_Counter:inst
+PC_Out[3] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+PC_Out[2] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+PC_Out[1] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+PC_Out[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => inst6.ACLR
+CLRN => inst5.ACLR
+CLRN => inst7.ACLR
+CLRN => inst8.ACLR
+Clock => inst5.CLK
+Ep => inst12.OE
+Ep => inst13.OE
+Ep => inst.OE
+Ep => inst14.OE
+
+
