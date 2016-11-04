@@ -55,8 +55,8 @@ agreement for further details.
 	(port
 		(pt 224 32)
 		(output)
-		(text "PC_Out[0..3]" (rect 0 0 113 16)(font "Arial" (font_size 8)))
-		(text "PC_Out[0..3]" (rect 90 27 203 43)(font "Arial" (font_size 8)))
+		(text "PC_Out[3..0]" (rect 0 0 113 16)(font "Arial" (font_size 8)))
+		(text "PC_Out[3..0]" (rect 90 27 203 43)(font "Arial" (font_size 8)))
 		(line (pt 224 32)(pt 208 32)(line_width 3))
 	)
 	(drawing

@@ -1,0 +1,658 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect -160 112 16 128)
+	(text "INPUT" (rect 133 0 174 11)(font "Arial" (font_size 6)))
+	(text "La" (rect 9 0 25 14)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 160 18)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -136 40 40 56)
+	(text "INPUT" (rect 133 0 174 11)(font "Arial" (font_size 6)))
+	(text "Dados[7..0]" (rect 9 0 99 14)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 160 18)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 568 232 744 248)
+	(text "INPUT" (rect 2 5 43 16)(font "Arial" (font_size 6)))
+	(text "Ea" (rect 151 2 167 16)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 84 4)(pt 59 4))
+		(line (pt 84 12)(pt 59 12))
+		(line (pt 55 8)(pt 0 8))
+		(line (pt 84 4)(pt 84 12))
+		(line (pt 59 12)(pt 55 8))
+		(line (pt 59 4)(pt 55 8))
+	)
+	(rotate180)
+	(text "VCC" (rect 16 -2 40 9)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 208 264 384 280)
+	(text "INPUT" (rect 2 5 43 16)(font "Arial" (font_size 6)))
+	(text "Clock" (rect 126 2 167 16)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 84 4)(pt 59 4))
+		(line (pt 84 12)(pt 59 12))
+		(line (pt 55 8)(pt 0 8))
+		(line (pt 84 4)(pt 84 12))
+		(line (pt 59 12)(pt 55 8))
+		(line (pt 59 4)(pt 55 8))
+	)
+	(rotate180)
+	(text "VCC" (rect 16 -2 40 9)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 896 208 1072 224)
+	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
+	(text "S[7..0]" (rect 90 0 147 14)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 896 248 1072 264)
+	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
+	(text "SB[7..0]" (rect 90 0 156 14)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 64 264 96 296)
+	(text "GND" (rect 8 16 32 27)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 21 44 35)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 14)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 14)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 584 72 800 168)
+	(text "74LS126_TriState_Buffer" (rect 5 0 222 16)(font "Arial" (font_size 8)))
+	(text "inst4" (rect 8 78 49 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN[3..0]" (rect 0 0 75 16)(font "Arial" (font_size 8)))
+		(text "IN[3..0]" (rect 21 27 96 43)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "E" (rect 0 0 9 16)(font "Arial" (font_size 8)))
+		(text "E" (rect 21 43 30 59)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "OUT[3..0]" (rect 0 0 84 16)(font "Arial" (font_size 8)))
+		(text "OUT[3..0]" (rect 111 27 195 43)(font "Arial" (font_size 8)))
+		(line (pt 216 32)(pt 200 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 200 80))
+	)
+)
+(symbol
+	(rect 584 304 800 400)
+	(text "74LS126_TriState_Buffer" (rect 5 0 222 16)(font "Arial" (font_size 8)))
+	(text "inst5" (rect 8 78 49 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN[3..0]" (rect 0 0 75 16)(font "Arial" (font_size 8)))
+		(text "IN[3..0]" (rect 21 27 96 43)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "E" (rect 0 0 9 16)(font "Arial" (font_size 8)))
+		(text "E" (rect 21 43 30 59)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "OUT[3..0]" (rect 0 0 84 16)(font "Arial" (font_size 8)))
+		(text "OUT[3..0]" (rect 111 27 195 43)(font "Arial" (font_size 8)))
+		(line (pt 216 32)(pt 200 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 200 80))
+	)
+)
+(symbol
+	(rect 184 24 352 248)
+	(text "74LS173_Registrador" (rect 5 0 184 16)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 206 41 220)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "M" (rect 0 0 9 16)(font "Arial" (font_size 8)))
+		(text "M" (rect 21 27 30 43)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "N" (rect 0 0 9 16)(font "Arial" (font_size 8)))
+		(text "N" (rect 21 43 30 59)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Dados[0]" (rect 0 0 75 16)(font "Arial" (font_size 8)))
+		(text "Dados[0]" (rect 21 59 96 75)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "G1" (rect 0 0 18 16)(font "Arial" (font_size 8)))
+		(text "G1" (rect 21 75 39 91)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "G2" (rect 0 0 18 16)(font "Arial" (font_size 8)))
+		(text "G2" (rect 21 91 39 107)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "Dados[1]" (rect 0 0 75 16)(font "Arial" (font_size 8)))
+		(text "Dados[1]" (rect 21 107 96 123)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "Clock" (rect 0 0 47 16)(font "Arial" (font_size 8)))
+		(text "Clock" (rect 21 123 68 139)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "Dados[2]" (rect 0 0 75 16)(font "Arial" (font_size 8)))
+		(text "Dados[2]" (rect 21 139 96 155)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "Dados[3]" (rect 0 0 75 16)(font "Arial" (font_size 8)))
+		(text "Dados[3]" (rect 21 155 96 171)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "Clear" (rect 0 0 47 16)(font "Arial" (font_size 8)))
+		(text "Clear" (rect 21 171 68 187)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 168 32)
+		(output)
+		(text "Q[0]" (rect 0 0 37 16)(font "Arial" (font_size 8)))
+		(text "Q[0]" (rect 110 27 147 43)(font "Arial" (font_size 8)))
+		(line (pt 168 32)(pt 152 32))
+	)
+	(port
+		(pt 168 48)
+		(output)
+		(text "Q[1]" (rect 0 0 37 16)(font "Arial" (font_size 8)))
+		(text "Q[1]" (rect 110 43 147 59)(font "Arial" (font_size 8)))
+		(line (pt 168 48)(pt 152 48))
+	)
+	(port
+		(pt 168 64)
+		(output)
+		(text "Q[2]" (rect 0 0 37 16)(font "Arial" (font_size 8)))
+		(text "Q[2]" (rect 110 59 147 75)(font "Arial" (font_size 8)))
+		(line (pt 168 64)(pt 152 64))
+	)
+	(port
+		(pt 168 80)
+		(output)
+		(text "Q[3]" (rect 0 0 37 16)(font "Arial" (font_size 8)))
+		(text "Q[3]" (rect 110 75 147 91)(font "Arial" (font_size 8)))
+		(line (pt 168 80)(pt 152 80))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 208))
+	)
+)
+(symbol
+	(rect 184 296 352 520)
+	(text "74LS173_Registrador" (rect 5 0 184 16)(font "Arial" (font_size 8)))
+	(text "inst2" (rect 8 206 49 220)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "M" (rect 0 0 9 16)(font "Arial" (font_size 8)))
+		(text "M" (rect 21 27 30 43)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "N" (rect 0 0 9 16)(font "Arial" (font_size 8)))
+		(text "N" (rect 21 43 30 59)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Dados[0]" (rect 0 0 75 16)(font "Arial" (font_size 8)))
+		(text "Dados[0]" (rect 21 59 96 75)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "G1" (rect 0 0 18 16)(font "Arial" (font_size 8)))
+		(text "G1" (rect 21 75 39 91)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "G2" (rect 0 0 18 16)(font "Arial" (font_size 8)))
+		(text "G2" (rect 21 91 39 107)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "Dados[1]" (rect 0 0 75 16)(font "Arial" (font_size 8)))
+		(text "Dados[1]" (rect 21 107 96 123)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "Clock" (rect 0 0 47 16)(font "Arial" (font_size 8)))
+		(text "Clock" (rect 21 123 68 139)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "Dados[2]" (rect 0 0 75 16)(font "Arial" (font_size 8)))
+		(text "Dados[2]" (rect 21 139 96 155)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "Dados[3]" (rect 0 0 75 16)(font "Arial" (font_size 8)))
+		(text "Dados[3]" (rect 21 155 96 171)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "Clear" (rect 0 0 47 16)(font "Arial" (font_size 8)))
+		(text "Clear" (rect 21 171 68 187)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 168 32)
+		(output)
+		(text "Q[0]" (rect 0 0 37 16)(font "Arial" (font_size 8)))
+		(text "Q[0]" (rect 110 27 147 43)(font "Arial" (font_size 8)))
+		(line (pt 168 32)(pt 152 32))
+	)
+	(port
+		(pt 168 48)
+		(output)
+		(text "Q[1]" (rect 0 0 37 16)(font "Arial" (font_size 8)))
+		(text "Q[1]" (rect 110 43 147 59)(font "Arial" (font_size 8)))
+		(line (pt 168 48)(pt 152 48))
+	)
+	(port
+		(pt 168 64)
+		(output)
+		(text "Q[2]" (rect 0 0 37 16)(font "Arial" (font_size 8)))
+		(text "Q[2]" (rect 110 59 147 75)(font "Arial" (font_size 8)))
+		(line (pt 168 64)(pt 152 64))
+	)
+	(port
+		(pt 168 80)
+		(output)
+		(text "Q[3]" (rect 0 0 37 16)(font "Arial" (font_size 8)))
+		(text "Q[3]" (rect 110 75 147 91)(font "Arial" (font_size 8)))
+		(line (pt 168 80)(pt 152 80))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 208))
+	)
+)
+(connector
+	(text "S[7..0]" (rect 850 200 907 214)(font "Arial" ))
+	(pt 896 216)
+	(pt 840 216)
+	(bus)
+)
+(connector
+	(pt 584 352)
+	(pt 568 352)
+)
+(connector
+	(pt 584 120)
+	(pt 568 120)
+)
+(connector
+	(pt 208 272)
+	(pt 120 272)
+)
+(connector
+	(pt 168 56)
+	(pt 184 56)
+)
+(connector
+	(pt 168 72)
+	(pt 184 72)
+)
+(connector
+	(pt 136 104)
+	(pt 184 104)
+)
+(connector
+	(pt 120 152)
+	(pt 184 152)
+)
+(connector
+	(pt 168 56)
+	(pt 168 72)
+)
+(connector
+	(pt 168 200)
+	(pt 184 200)
+)
+(connector
+	(pt 80 264)
+	(pt 168 264)
+)
+(connector
+	(pt 168 72)
+	(pt 168 200)
+)
+(connector
+	(text "Dados[7..0]" (rect 40 32 130 46)(font "Arial" ))
+	(pt 40 48)
+	(pt 72 48)
+	(bus)
+)
+(connector
+	(pt 136 120)
+	(pt 184 120)
+)
+(connector
+	(pt 136 104)
+	(pt 136 120)
+)
+(connector
+	(pt 168 200)
+	(pt 168 264)
+)
+(connector
+	(pt 168 328)
+	(pt 184 328)
+)
+(connector
+	(pt 168 344)
+	(pt 184 344)
+)
+(connector
+	(pt 136 376)
+	(pt 184 376)
+)
+(connector
+	(pt 168 472)
+	(pt 184 472)
+)
+(connector
+	(pt 136 392)
+	(pt 184 392)
+)
+(connector
+	(pt 120 424)
+	(pt 184 424)
+)
+(connector
+	(pt 168 264)
+	(pt 168 328)
+)
+(connector
+	(pt 168 328)
+	(pt 168 344)
+)
+(connector
+	(pt 168 344)
+	(pt 168 472)
+)
+(connector
+	(pt 136 120)
+	(pt 136 376)
+)
+(connector
+	(pt 136 376)
+	(pt 136 392)
+)
+(connector
+	(pt 120 152)
+	(pt 120 272)
+)
+(connector
+	(pt 120 272)
+	(pt 120 424)
+)
+(connector
+	(pt 16 120)
+	(pt 136 120)
+)
+(connector
+	(text "Dados[4]" (rect 122 72 188 86)(font "Arial" ))
+	(pt 184 88)
+	(pt 112 88)
+)
+(connector
+	(text "Dados[5]" (rect 122 120 188 134)(font "Arial" ))
+	(pt 184 136)
+	(pt 112 136)
+)
+(connector
+	(text "Dados[6]" (rect 122 152 188 166)(font "Arial" ))
+	(pt 184 168)
+	(pt 112 168)
+)
+(connector
+	(text "Dados[7]" (rect 122 168 188 182)(font "Arial" ))
+	(pt 184 184)
+	(pt 112 184)
+)
+(connector
+	(text "Dados[0]" (rect 122 344 188 358)(font "Arial" ))
+	(pt 184 360)
+	(pt 112 360)
+)
+(connector
+	(text "Dados[1]" (rect 122 392 188 406)(font "Arial" ))
+	(pt 184 408)
+	(pt 112 408)
+)
+(connector
+	(text "Dados[2]" (rect 122 424 188 438)(font "Arial" ))
+	(pt 184 440)
+	(pt 112 440)
+)
+(connector
+	(text "Dados[3]" (rect 122 440 188 454)(font "Arial" ))
+	(pt 184 456)
+	(pt 112 456)
+)
+(connector
+	(pt 568 120)
+	(pt 568 240)
+)
+(connector
+	(pt 568 240)
+	(pt 568 352)
+)
+(connector
+	(text "S[7..4]" (rect 810 88 867 102)(font "Arial" ))
+	(pt 888 104)
+	(pt 800 104)
+	(bus)
+)
+(connector
+	(text "S[3..0]" (rect 818 320 875 334)(font "Arial" ))
+	(pt 888 336)
+	(pt 800 336)
+	(bus)
+)
+(connector
+	(text "Saida[7..0]" (rect 842 240 932 254)(font "Arial" ))
+	(pt 840 256)
+	(pt 896 256)
+	(bus)
+)
+(connector
+	(text "Saida[4]" (rect 362 40 428 54)(font "Arial" ))
+	(pt 352 56)
+	(pt 408 56)
+)
+(connector
+	(text "Saida[5]" (rect 362 56 428 70)(font "Arial" ))
+	(pt 352 72)
+	(pt 408 72)
+)
+(connector
+	(text "Saida[6]" (rect 362 72 428 86)(font "Arial" ))
+	(pt 352 88)
+	(pt 408 88)
+)
+(connector
+	(text "Saida[7]" (rect 362 88 428 102)(font "Arial" ))
+	(pt 352 104)
+	(pt 408 104)
+)
+(connector
+	(text "Saida[0]" (rect 362 312 428 326)(font "Arial" ))
+	(pt 352 328)
+	(pt 408 328)
+)
+(connector
+	(text "Saida[1]" (rect 362 328 428 342)(font "Arial" ))
+	(pt 352 344)
+	(pt 408 344)
+)
+(connector
+	(text "Saida[2]" (rect 362 344 428 358)(font "Arial" ))
+	(pt 352 360)
+	(pt 408 360)
+)
+(connector
+	(text "Saida[3]" (rect 362 360 428 374)(font "Arial" ))
+	(pt 352 376)
+	(pt 408 376)
+)
+(connector
+	(text "Saida[3..0]" (rect 506 320 596 334)(font "Arial" ))
+	(pt 584 336)
+	(pt 496 336)
+	(bus)
+)
+(connector
+	(text "Saida[7..4]" (rect 506 88 596 102)(font "Arial" ))
+	(pt 584 104)
+	(pt 496 104)
+	(bus)
+)
+(junction (pt 568 240))
+(junction (pt 120 272))
+(junction (pt 136 120))
+(junction (pt 168 72))
+(junction (pt 168 200))
+(junction (pt 168 264))
+(junction (pt 168 328))
+(junction (pt 168 344))
+(junction (pt 136 376))

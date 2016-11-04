@@ -21,9 +21,9 @@ agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 200 112)
+	(rect 16 16 200 144)
 	(text "AddSub" (rect 5 0 61 16)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 78 41 92)(font "Arial" ))
+	(text "inst" (rect 8 110 41 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -46,6 +46,13 @@ agreement for further details.
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
+		(pt 0 80)
+		(input)
+		(text "CIN" (rect 0 0 28 16)(font "Arial" (font_size 8)))
+		(text "CIN" (rect 21 75 49 91)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
 		(pt 184 32)
 		(output)
 		(text "COUT" (rect 0 0 37 16)(font "Arial" (font_size 8)))
@@ -60,6 +67,6 @@ agreement for further details.
 		(line (pt 184 48)(pt 168 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 168 80))
+		(rectangle (rect 16 16 168 112))
 	)
 )

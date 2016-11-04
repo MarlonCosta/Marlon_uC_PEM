@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Micro_Computador
-Mon Oct 31 16:11:49 2016
+Thu Nov 03 22:56:58 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -10,8 +10,17 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Elapsed Time Per Partition
-  6. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis IP Cores Summary
+  9. General Register Statistics
+ 10. Source assignments for RAM:inst10|altsyncram:altsyncram_component|altsyncram_cjl1:auto_generated
+ 11. Parameter Settings for User Entity Instance: RAM:inst10|altsyncram:altsyncram_component
+ 12. altsyncram Parameter Settings by Entity Instance
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -38,20 +47,20 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Oct 31 16:11:49 2016           ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 03 22:56:58 2016       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; Micro_Computador                            ;
 ; Top-level Entity Name              ; Micro_Computador                            ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 2                                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -153,12 +162,215 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                         ;
++----------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                   ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                         ; Library ;
++----------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------+---------+
+; Instruction_Decoder.bdf                            ; yes             ; User Block Diagram/Schematic File      ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/Instruction_Decoder.bdf          ;         ;
+; Registrador_B.bdf                                  ; yes             ; User Block Diagram/Schematic File      ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/Registrador_B.bdf                ;         ;
+; Acumulador_A.bdf                                   ; yes             ; User Block Diagram/Schematic File      ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/Acumulador_A.bdf                 ;         ;
+; 74LS173_Registrador.bdf                            ; yes             ; User Block Diagram/Schematic File      ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/74LS173_Registrador.bdf          ;         ;
+; 74LS126_TriState_Buffer.bdf                        ; yes             ; User Block Diagram/Schematic File      ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/74LS126_TriState_Buffer.bdf      ;         ;
+; ../Somador/Somador_Completo.bdf                    ; yes             ; User Block Diagram/Schematic File      ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/Somador_Completo.bdf                     ;         ;
+; ../Somador/Meio_Somador.bdf                        ; yes             ; User Block Diagram/Schematic File      ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/Somador/Meio_Somador.bdf                         ;         ;
+; Program_Counter.bdf                                ; yes             ; User Block Diagram/Schematic File      ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/Program_Counter.bdf              ;         ;
+; Micro_Computador.bdf                               ; yes             ; User Block Diagram/Schematic File      ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/Micro_Computador.bdf             ;         ;
+; AddSub.bdf                                         ; yes             ; User Block Diagram/Schematic File      ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/AddSub.bdf                       ;         ;
+; ChainAdders.bdf                                    ; yes             ; User Block Diagram/Schematic File      ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/ChainAdders.bdf                  ;         ;
+; RAM.v                                              ; yes             ; User Wizard-Generated File             ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/RAM.v                            ;         ;
+; Ring_Counter.bdf                                   ; yes             ; User Block Diagram/Schematic File      ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/Ring_Counter.bdf                 ;         ;
+; MAR.bdf                                            ; yes             ; User Block Diagram/Schematic File      ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/MAR.bdf                          ;         ;
+; 74LS157_Selector.bdf                               ; yes             ; User Block Diagram/Schematic File      ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/74LS157_Selector.bdf             ;         ;
+; Control_Matrix.bdf                                 ; yes             ; User Block Diagram/Schematic File      ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/Control_Matrix.bdf               ;         ;
+; Controlador_Sequencializador.bdf                   ; yes             ; User Block Diagram/Schematic File      ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/Controlador_Sequencializador.bdf ;         ;
+; altsyncram.tdf                                     ; yes             ; Megafunction                           ; c:/altera_lite/16.0/quartus/libraries/megafunctions/altsyncram.tdf                                   ;         ;
+; stratix_ram_block.inc                              ; yes             ; Megafunction                           ; c:/altera_lite/16.0/quartus/libraries/megafunctions/stratix_ram_block.inc                            ;         ;
+; lpm_mux.inc                                        ; yes             ; Megafunction                           ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_mux.inc                                      ;         ;
+; lpm_decode.inc                                     ; yes             ; Megafunction                           ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_decode.inc                                   ;         ;
+; aglobal160.inc                                     ; yes             ; Megafunction                           ; c:/altera_lite/16.0/quartus/libraries/megafunctions/aglobal160.inc                                   ;         ;
+; a_rdenreg.inc                                      ; yes             ; Megafunction                           ; c:/altera_lite/16.0/quartus/libraries/megafunctions/a_rdenreg.inc                                    ;         ;
+; altrom.inc                                         ; yes             ; Megafunction                           ; c:/altera_lite/16.0/quartus/libraries/megafunctions/altrom.inc                                       ;         ;
+; altram.inc                                         ; yes             ; Megafunction                           ; c:/altera_lite/16.0/quartus/libraries/megafunctions/altram.inc                                       ;         ;
+; altdpram.inc                                       ; yes             ; Megafunction                           ; c:/altera_lite/16.0/quartus/libraries/megafunctions/altdpram.inc                                     ;         ;
+; db/altsyncram_cjl1.tdf                             ; yes             ; Auto-Generated Megafunction            ; C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/db/altsyncram_cjl1.tdf           ;         ;
+; /users/mrlnr/downloads/joshcorbin-sap1/sap1program ; yes             ; Auto-Found Memory Initialization File  ; /users/mrlnr/downloads/joshcorbin-sap1/sap1program                                                   ;         ;
++----------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 2     ;
+;                                             ;       ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; Clock ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 2     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                            ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name      ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+------------------+--------------+
+; |Micro_Computador          ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |Micro_Computador   ; Micro_Computador ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                          ;
++--------+--------------+---------+--------------+--------------+------------------------------+-----------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance              ; IP Include File ;
++--------+--------------+---------+--------------+--------------+------------------------------+-----------------+
+; Altera ; RAM: 1-PORT  ; 16.0    ; N/A          ; N/A          ; |Micro_Computador|RAM:inst10 ; RAM.v           ;
++--------+--------------+---------+--------------+--------------+------------------------------+-----------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Source assignments for RAM:inst10|altsyncram:altsyncram_component|altsyncram_cjl1:auto_generated ;
++---------------------------------+--------------------+------+------------------------------------+
+; Assignment                      ; Value              ; From ; To                                 ;
++---------------------------------+--------------------+------+------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                  ;
++---------------------------------+--------------------+------+------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RAM:inst10|altsyncram:altsyncram_component                       ;
++------------------------------------+---------------------------------------------------------+----------------+
+; Parameter Name                     ; Value                                                   ; Type           ;
++------------------------------------+---------------------------------------------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                                                       ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                                                      ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                                     ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                                                      ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                                     ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                                                       ; Untyped        ;
+; OPERATION_MODE                     ; SINGLE_PORT                                             ; Untyped        ;
+; WIDTH_A                            ; 8                                                       ; Signed Integer ;
+; WIDTHAD_A                          ; 4                                                       ; Signed Integer ;
+; NUMWORDS_A                         ; 16                                                      ; Signed Integer ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                            ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                                                    ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                                                    ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                                                    ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                                                    ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                                                    ; Untyped        ;
+; WIDTH_B                            ; 1                                                       ; Untyped        ;
+; WIDTHAD_B                          ; 1                                                       ; Untyped        ;
+; NUMWORDS_B                         ; 1                                                       ; Untyped        ;
+; INDATA_REG_B                       ; CLOCK1                                                  ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                                  ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1                                                  ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK1                                                  ; Untyped        ;
+; OUTDATA_REG_B                      ; UNREGISTERED                                            ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1                                                  ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                                                    ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                                                    ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                                                    ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                                                    ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                                                    ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                                                    ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                                                       ; Signed Integer ;
+; WIDTH_BYTEENA_B                    ; 1                                                       ; Untyped        ;
+; RAM_BLOCK_TYPE                     ; AUTO                                                    ; Untyped        ;
+; BYTE_SIZE                          ; 8                                                       ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                               ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                                    ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                                    ; Untyped        ;
+; INIT_FILE                          ; ../../../../../../Downloads/JoshCorbin-SAP1/sap1program ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                                  ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                                                       ; Untyped        ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                                                  ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                                  ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                                  ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                                  ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                         ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                         ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                                                   ; Untyped        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                                   ; Untyped        ;
+; WIDTH_ECCSTATUS                    ; 3                                                       ; Untyped        ;
+; DEVICE_FAMILY                      ; Cyclone IV E                                            ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_cjl1                                         ; Untyped        ;
++------------------------------------+---------------------------------------------------------+----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                       ;
++-------------------------------------------+--------------------------------------------+
+; Name                                      ; Value                                      ;
++-------------------------------------------+--------------------------------------------+
+; Number of entity instances                ; 1                                          ;
+; Entity Instance                           ; RAM:inst10|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                ;
+;     -- WIDTH_A                            ; 8                                          ;
+;     -- NUMWORDS_A                         ; 16                                         ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                               ;
+;     -- WIDTH_B                            ; 1                                          ;
+;     -- NUMWORDS_B                         ; 1                                          ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                     ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                               ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                       ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                  ;
++-------------------------------------------+--------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 2                               ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -168,9 +380,25 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Mon Oct 31 16:11:29 2016
+    Info: Processing started: Thu Nov 03 22:56:32 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Micro_Computador -c Micro_Computador
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file instruction_decoder.bdf
+    Info (12023): Found entity 1: Instruction_Decoder
+Info (12021): Found 1 design units, including 1 entities, in source file registrador_b.bdf
+    Info (12023): Found entity 1: Registrador_B
+Info (12021): Found 1 design units, including 1 entities, in source file instruction_register.bdf
+    Info (12023): Found entity 1: Instruction_Register
+Info (12021): Found 1 design units, including 1 entities, in source file acumulador_b.bdf
+    Info (12023): Found entity 1: Acumulador_B
+Info (12021): Found 1 design units, including 1 entities, in source file acumulador_a.bdf
+    Info (12023): Found entity 1: Acumulador_A
+Info (12021): Found 1 design units, including 1 entities, in source file 74ls173_registrador.bdf
+    Info (12023): Found entity 1: 74LS173_Registrador
+Info (12021): Found 1 design units, including 1 entities, in source file 74ls126_tristate_buffer.bdf
+    Info (12023): Found entity 1: 74LS126_TriState_Buffer
+Info (12021): Found 1 design units, including 1 entities, in source file 74ls83_somador_4_bits.bdf
+    Info (12023): Found entity 1: 74LS83_Somador_4_bits
 Info (12021): Found 1 design units, including 1 entities, in source file /users/mrlnr/dropbox/ifpb/ec/pem/projetos quartus/somador/somador_completo.bdf
     Info (12023): Found entity 1: Somador_Completo
 Info (12021): Found 1 design units, including 1 entities, in source file /users/mrlnr/dropbox/ifpb/ec/pem/projetos quartus/somador/meio_somador.bdf
@@ -179,23 +407,91 @@ Info (12021): Found 1 design units, including 1 entities, in source file /users/
     Info (12023): Found entity 1: Somador_Completo_4bits
 Info (12021): Found 1 design units, including 1 entities, in source file program_counter.bdf
     Info (12023): Found entity 1: Program_Counter
-Info (12021): Found 1 design units, including 1 entities, in source file registrador.bdf
-    Info (12023): Found entity 1: Registrador
 Info (12021): Found 1 design units, including 1 entities, in source file micro_computador.bdf
     Info (12023): Found entity 1: Micro_Computador
 Info (12021): Found 1 design units, including 1 entities, in source file addsub.bdf
     Info (12023): Found entity 1: AddSub
-Info (12021): Found 1 design units, including 1 entities, in source file ffjk.bdf
-    Info (12023): Found entity 1: FFJK
-Info (12021): Found 1 design units, including 1 entities, in source file ffd.bdf
-    Info (12023): Found entity 1: FFD
+Info (12021): Found 1 design units, including 1 entities, in source file chainadders.bdf
+    Info (12023): Found entity 1: ChainAdders
+Warning (12019): Can't analyze file -- file 74LS126 - TriState Buffer.bdf is missing
+Info (12021): Found 1 design units, including 1 entities, in source file ram.v
+    Info (12023): Found entity 1: RAM File: C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/RAM.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ring_counter.bdf
+    Info (12023): Found entity 1: Ring_Counter
+Info (12021): Found 1 design units, including 1 entities, in source file mar.bdf
+    Info (12023): Found entity 1: MAR
+Info (12021): Found 1 design units, including 1 entities, in source file 74ls157_selector.bdf
+    Info (12023): Found entity 1: 74LS157_Selector
+Info (12021): Found 1 design units, including 1 entities, in source file control_matrix.bdf
+    Info (12023): Found entity 1: Control_Matrix
+Info (12021): Found 1 design units, including 1 entities, in source file controlador_sequencializador.bdf
+    Info (12023): Found entity 1: Controlador_Sequencializador
 Info (12127): Elaborating entity "Micro_Computador" for the top level hierarchy
 Info (12128): Elaborating entity "Program_Counter" for hierarchy "Program_Counter:inst"
-Error (12061): Can't synthesize current design -- Top partition does not contain any logic
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 822 megabytes
-    Error: Processing ended: Mon Oct 31 16:11:49 2016
-    Error: Elapsed time: 00:00:20
-    Error: Total CPU time (on all processors): 00:00:44
+Info (12128): Elaborating entity "74LS126_TriState_Buffer" for hierarchy "Program_Counter:inst|74LS126_TriState_Buffer:inst"
+Info (12128): Elaborating entity "ChainAdders" for hierarchy "ChainAdders:inst1"
+Warning (275008): Primitive "GND" of instance "inst" not used
+Info (12128): Elaborating entity "AddSub" for hierarchy "ChainAdders:inst1|AddSub:inst2"
+Info (12128): Elaborating entity "Somador_Completo" for hierarchy "ChainAdders:inst1|AddSub:inst2|Somador_Completo:inst4"
+Info (12128): Elaborating entity "Meio_Somador" for hierarchy "ChainAdders:inst1|AddSub:inst2|Somador_Completo:inst4|Meio_Somador:inst"
+Info (12128): Elaborating entity "Registrador_B" for hierarchy "Registrador_B:inst11"
+Warning (275043): Pin "S[7..0]" is missing source
+Info (12128): Elaborating entity "74LS173_Registrador" for hierarchy "Registrador_B:inst11|74LS173_Registrador:inst2"
+Warning (275011): Block or symbol "NOT" of instance "inst26" overlaps another block or symbol
+Info (12128): Elaborating entity "Acumulador_A" for hierarchy "Acumulador_A:inst13"
+Info (12128): Elaborating entity "RAM" for hierarchy "RAM:inst10"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "RAM:inst10|altsyncram:altsyncram_component" File: C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/RAM.v Line: 86
+Info (12130): Elaborated megafunction instantiation "RAM:inst10|altsyncram:altsyncram_component" File: C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/RAM.v Line: 86
+Info (12133): Instantiated megafunction "RAM:inst10|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/RAM.v Line: 86
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "../../../../../../Downloads/JoshCorbin-SAP1/sap1program"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "16"
+    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "widthad_a" = "4"
+    Info (12134): Parameter "width_a" = "8"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_cjl1.tdf
+    Info (12023): Found entity 1: altsyncram_cjl1 File: C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/db/altsyncram_cjl1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_cjl1" for hierarchy "RAM:inst10|altsyncram:altsyncram_component|altsyncram_cjl1:auto_generated" File: c:/altera_lite/16.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "MAR" for hierarchy "MAR:inst2"
+Info (12128): Elaborating entity "74LS157_Selector" for hierarchy "MAR:inst2|74LS157_Selector:inst3"
+Info (12128): Elaborating entity "Controlador_Sequencializador" for hierarchy "Controlador_Sequencializador:inst3"
+Warning (275011): Block or symbol "Ring_Counter" of instance "inst" overlaps another block or symbol
+Warning (275009): Pin "Clock" not connected
+Warning (275009): Pin "ClearN" not connected
+Info (12128): Elaborating entity "Control_Matrix" for hierarchy "Controlador_Sequencializador:inst3|Control_Matrix:inst4"
+Info (12128): Elaborating entity "Instruction_Decoder" for hierarchy "Controlador_Sequencializador:inst3|Instruction_Decoder:inst3"
+Info (12128): Elaborating entity "Ring_Counter" for hierarchy "Controlador_Sequencializador:inst3|Ring_Counter:inst"
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "RAM:inst10|altsyncram:altsyncram_component|altsyncram_cjl1:auto_generated|q_a[0]" File: C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/db/altsyncram_cjl1.tdf Line: 37
+        Warning (14320): Synthesized away node "RAM:inst10|altsyncram:altsyncram_component|altsyncram_cjl1:auto_generated|q_a[1]" File: C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/db/altsyncram_cjl1.tdf Line: 61
+        Warning (14320): Synthesized away node "RAM:inst10|altsyncram:altsyncram_component|altsyncram_cjl1:auto_generated|q_a[2]" File: C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/db/altsyncram_cjl1.tdf Line: 85
+        Warning (14320): Synthesized away node "RAM:inst10|altsyncram:altsyncram_component|altsyncram_cjl1:auto_generated|q_a[3]" File: C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/db/altsyncram_cjl1.tdf Line: 109
+        Warning (14320): Synthesized away node "RAM:inst10|altsyncram:altsyncram_component|altsyncram_cjl1:auto_generated|q_a[4]" File: C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/db/altsyncram_cjl1.tdf Line: 133
+        Warning (14320): Synthesized away node "RAM:inst10|altsyncram:altsyncram_component|altsyncram_cjl1:auto_generated|q_a[5]" File: C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/db/altsyncram_cjl1.tdf Line: 157
+        Warning (14320): Synthesized away node "RAM:inst10|altsyncram:altsyncram_component|altsyncram_cjl1:auto_generated|q_a[6]" File: C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/db/altsyncram_cjl1.tdf Line: 181
+        Warning (14320): Synthesized away node "RAM:inst10|altsyncram:altsyncram_component|altsyncram_cjl1:auto_generated|q_a[7]" File: C:/Users/mrlnr/Dropbox/IFPB/EC/PEM/Projetos Quartus/MicroComputador/db/altsyncram_cjl1.tdf Line: 205
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Clock"
+    Warning (15610): No output dependent on input pin "Clear"
+Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
+    Info: Peak virtual memory: 846 megabytes
+    Info: Processing ended: Thu Nov 03 22:56:58 2016
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:00:39
 
 
