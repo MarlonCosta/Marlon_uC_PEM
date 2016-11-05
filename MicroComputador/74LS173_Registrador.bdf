@@ -1101,6 +1101,21 @@ agreement for further details.
 		(circle (rect 9 28 17 36))
 	)
 )
+(symbol
+	(rect 456 48 488 64)
+	(text "VCC" (rect 7 0 31 11)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 5 44 19)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 21)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 21)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
 (connector
 	(pt 240 120)
 	(pt 296 120)
@@ -1601,6 +1616,50 @@ agreement for further details.
 	(pt 528 608)
 	(pt 552 608)
 )
+(connector
+	(pt 472 520)
+	(pt 472 512)
+)
+(connector
+	(pt 472 512)
+	(pt 520 512)
+)
+(connector
+	(pt 472 360)
+	(pt 472 352)
+)
+(connector
+	(pt 472 352)
+	(pt 520 352)
+)
+(connector
+	(pt 520 352)
+	(pt 520 512)
+)
+(connector
+	(pt 472 72)
+	(pt 472 64)
+)
+(connector
+	(pt 472 64)
+	(pt 520 64)
+)
+(connector
+	(pt 472 208)
+	(pt 472 200)
+)
+(connector
+	(pt 472 200)
+	(pt 520 200)
+)
+(connector
+	(pt 520 64)
+	(pt 520 200)
+)
+(connector
+	(pt 520 200)
+	(pt 520 352)
+)
 (junction (pt 8 168))
 (junction (pt 152 168))
 (junction (pt 8 264))
@@ -1620,5 +1679,7 @@ agreement for further details.
 (junction (pt 472 608))
 (junction (pt 432 448))
 (junction (pt 432 296))
+(junction (pt 520 352))
+(junction (pt 520 200))
 (text "Controles de saída" (rect -200 0 -31 16)(font "Arial" (font_size 8)))
 (text "74LS173" (rect 88 -24 154 -8)(font "Arial" (font_size 8)))

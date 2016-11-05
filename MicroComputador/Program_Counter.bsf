@@ -34,8 +34,8 @@ agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "Clock" (rect 0 0 47 16)(font "Arial" (font_size 8)))
-		(text "Clock" (rect 21 43 68 59)(font "Arial" (font_size 8)))
+		(text "ClockN" (rect 0 0 56 16)(font "Arial" (font_size 8)))
+		(text "ClockN" (rect 21 43 77 59)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port

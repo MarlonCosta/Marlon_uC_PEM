@@ -1,6 +1,6 @@
 CLOCK_ENABLE_INPUT_A=BYPASS
 CLOCK_ENABLE_OUTPUT_A=BYPASS
-INIT_FILE=../../../../../../Downloads/JoshCorbin-SAP1/sap1program
+INIT_FILE=../../../../../../Downloads/uP_Programa.hex
 INTENDED_DEVICE_FAMILY="Cyclone IV E"
 NUMWORDS_A=16
 OPERATION_MODE=SINGLE_PORT

@@ -336,26 +336,6 @@ agreement for further details.
 	(pt 128 168)
 )
 (connector
-	(text "S[4]" (rect 418 8 451 22)(font "Arial" ))
-	(pt 408 24)
-	(pt 480 24)
-)
-(connector
-	(text "S[5]" (rect 418 24 451 38)(font "Arial" ))
-	(pt 408 40)
-	(pt 480 40)
-)
-(connector
-	(text "S[7]" (rect 418 56 451 70)(font "Arial" ))
-	(pt 408 72)
-	(pt 480 72)
-)
-(connector
-	(text "S[6]" (rect 418 40 451 54)(font "Arial" ))
-	(pt 408 56)
-	(pt 480 56)
-)
-(connector
 	(text "Dados[4]" (rect 170 40 236 54)(font "Arial" ))
 	(pt 232 56)
 	(pt 160 56)
@@ -403,26 +383,6 @@ agreement for further details.
 (connector
 	(pt 136 168)
 	(pt 232 168)
-)
-(connector
-	(text "S[0]" (rect 418 336 451 350)(font "Arial" ))
-	(pt 408 352)
-	(pt 480 352)
-)
-(connector
-	(text "S[1]" (rect 418 352 451 366)(font "Arial" ))
-	(pt 408 368)
-	(pt 480 368)
-)
-(connector
-	(text "S[2]" (rect 418 368 451 382)(font "Arial" ))
-	(pt 408 384)
-	(pt 480 384)
-)
-(connector
-	(text "S[3]" (rect 418 384 451 398)(font "Arial" ))
-	(pt 408 400)
-	(pt 480 400)
 )
 (connector
 	(pt 128 400)
@@ -516,6 +476,46 @@ agreement for further details.
 	(pt 32 48)
 	(pt 64 48)
 	(bus)
+)
+(connector
+	(text "S[4]" (rect 410 8 443 22)(font "Arial" ))
+	(pt 400 24)
+	(pt 472 24)
+)
+(connector
+	(text "S[5]" (rect 410 24 443 38)(font "Arial" ))
+	(pt 400 40)
+	(pt 472 40)
+)
+(connector
+	(text "S[7]" (rect 410 56 443 70)(font "Arial" ))
+	(pt 400 72)
+	(pt 472 72)
+)
+(connector
+	(text "S[6]" (rect 410 40 443 54)(font "Arial" ))
+	(pt 400 56)
+	(pt 472 56)
+)
+(connector
+	(text "S[0]" (rect 410 336 443 350)(font "Arial" ))
+	(pt 400 352)
+	(pt 472 352)
+)
+(connector
+	(text "S[1]" (rect 410 352 443 366)(font "Arial" ))
+	(pt 400 368)
+	(pt 472 368)
+)
+(connector
+	(text "S[2]" (rect 410 368 443 382)(font "Arial" ))
+	(pt 400 384)
+	(pt 472 384)
+)
+(connector
+	(text "S[3]" (rect 410 384 443 398)(font "Arial" ))
+	(pt 400 400)
+	(pt 472 400)
 )
 (junction (pt 136 368))
 (junction (pt 128 400))

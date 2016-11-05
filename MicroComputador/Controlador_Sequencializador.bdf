@@ -523,11 +523,6 @@ agreement for further details.
 	)
 )
 (connector
-	(pt 312 120)
-	(pt 344 120)
-	(bus)
-)
-(connector
 	(text "T[6]" (rect 293 288 326 302)(font "Arial" ))
 	(pt 368 304)
 	(pt 288 304)
@@ -597,4 +592,10 @@ agreement for further details.
 	(text "I[8]" (rect 98 272 131 286)(font "Arial" ))
 	(pt 88 288)
 	(pt 160 288)
+)
+(connector
+	(text "T[6..1]" (rect 312 104 369 118)(font "Arial" ))
+	(pt 312 120)
+	(pt 344 120)
+	(bus)
 )

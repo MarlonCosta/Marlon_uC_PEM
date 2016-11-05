@@ -2,37 +2,36 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 21:31:06 on Oct 30,2016
+# Start time: 15:52:14 on Nov 04,2016
 # vlog -work work Micro_Computador.vo 
-# -- Compiling module FFJK
+# -- Compiling module Micro_Computador
 # 
 # Top level modules:
-# 	FFJK
-# End time: 21:31:07 on Oct 30,2016, Elapsed time: 0:00:01
+# 	Micro_Computador
+# End time: 15:52:14 on Nov 04,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 21:31:07 on Oct 30,2016
-# vlog -work work Waveform.vwf.vt 
-# -- Compiling module FFJK_vlg_vec_tst
+# Start time: 15:52:14 on Nov 04,2016
+# vlog -work work TesteFinal1.vwf.vt 
+# -- Compiling module Micro_Computador_vlg_vec_tst
 # 
 # Top level modules:
-# 	FFJK_vlg_vec_tst
-# End time: 21:31:07 on Oct 30,2016, Elapsed time: 0:00:00
+# 	Micro_Computador_vlg_vec_tst
+# End time: 15:52:14 on Nov 04,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.FFJK_vlg_vec_tst -voptargs=""+acc"" 
-# Start time: 21:31:07 on Oct 30,2016
-# Loading work.FFJK_vlg_vec_tst
-# Loading work.FFJK
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Micro_Computador_vlg_vec_tst -voptargs=""+acc"" 
+# Start time: 15:52:14 on Nov 04,2016
+# Loading work.Micro_Computador_vlg_vec_tst
+# Loading work.Micro_Computador
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
-# Loading cycloneive_ver.cycloneive_lcell_comb
 # SDF 10.4d Compiler 2015.12 Dec 30 2015
 # 
 # Loading instances from Micro_Computador_v.sdo
 # Loading timing data from Micro_Computador_v.sdo
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /FFJK_vlg_vec_tst File: Waveform.vwf.vt
-# ** Note: $finish    : Waveform.vwf.vt(51)
-#    Time: 1 us  Iteration: 0  Instance: /FFJK_vlg_vec_tst
-# End time: 21:31:08 on Oct 30,2016, Elapsed time: 0:00:01
+#    Time: 0 ps  Iteration: 0  Instance: /Micro_Computador_vlg_vec_tst File: TesteFinal1.vwf.vt
+# ** Note: $finish    : TesteFinal1.vwf.vt(47)
+#    Time: 100 us  Iteration: 0  Instance: /Micro_Computador_vlg_vec_tst
+# End time: 15:52:15 on Nov 04,2016, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

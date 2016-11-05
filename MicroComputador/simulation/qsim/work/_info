@@ -60,7 +60,7 @@ R0
 w1477873864
 8Waveform.vwf.vt
 FWaveform.vwf.vt
-L0 30
+Z9 L0 30
 R5
 r1
 !s85 0
@@ -71,3 +71,45 @@ r1
 !i113 1
 R8
 n@f@f@j@k_vlg_vec_tst
+vMicro_Computador
+Z10 !s110 1478285534
+!i10b 1
+!s100 7zfjKRK[l6nfYn2`ak<=M1
+IQ?:h];FW@^aMGeFe6Qf6I0
+R1
+R0
+w1478285532
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+Z11 !s108 1478285534.000000
+R6
+R7
+!i113 1
+R8
+n@micro_@computador
+vMicro_Computador_vlg_vec_tst
+R10
+!i10b 1
+!s100 oG[8DUi]XD[^>8A<Z2XO32
+I6Gb5j?n60_9nSMGSB]8[Q1
+R1
+R0
+w1478285530
+8TesteFinal1.vwf.vt
+FTesteFinal1.vwf.vt
+R9
+R5
+r1
+!s85 0
+31
+R11
+!s107 TesteFinal1.vwf.vt|
+!s90 -work|work|TesteFinal1.vwf.vt|
+!i113 1
+R8
+n@micro_@computador_vlg_vec_tst

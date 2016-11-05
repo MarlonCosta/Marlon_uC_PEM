@@ -21,9 +21,9 @@ agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 240 112)
+	(rect 16 16 256 144)
 	(text "Instruction_Register" (rect 5 0 193 16)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 78 41 92)(font "Arial" ))
+	(text "inst" (rect 8 110 41 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -34,8 +34,8 @@ agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "Clock" (rect 0 0 47 16)(font "Arial" (font_size 8)))
-		(text "Clock" (rect 21 43 68 59)(font "Arial" (font_size 8)))
+		(text "Ei" (rect 0 0 18 16)(font "Arial" (font_size 8)))
+		(text "Ei" (rect 21 43 39 59)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port
@@ -46,13 +46,27 @@ agreement for further details.
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
-		(pt 224 32)
+		(pt 0 80)
+		(input)
+		(text "Clock" (rect 0 0 47 16)(font "Arial" (font_size 8)))
+		(text "Clock" (rect 21 75 68 91)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 240 32)
 		(output)
-		(text "S[7..0]" (rect 0 0 66 16)(font "Arial" (font_size 8)))
-		(text "S[7..0]" (rect 137 27 203 43)(font "Arial" (font_size 8)))
-		(line (pt 224 32)(pt 208 32)(line_width 3))
+		(text "MSB[3..0]" (rect 0 0 84 16)(font "Arial" (font_size 8)))
+		(text "MSB[3..0]" (rect 135 27 219 43)(font "Arial" (font_size 8)))
+		(line (pt 240 32)(pt 224 32)(line_width 3))
+	)
+	(port
+		(pt 240 48)
+		(output)
+		(text "LSB[3..0]" (rect 0 0 84 16)(font "Arial" (font_size 8)))
+		(text "LSB[3..0]" (rect 135 43 219 59)(font "Arial" (font_size 8)))
+		(line (pt 240 48)(pt 224 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 208 80))
+		(rectangle (rect 16 16 224 112))
 	)
 )
